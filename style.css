@@ -181,7 +181,7 @@ img {
 
 .cards-conteudo {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 24px;
 }
 
@@ -704,5 +704,36 @@ img {
   .infra-banner-imagem img,
   .infra-card-imagem img {
     min-height: 220px;
+  }
+}
+/* AJUSTE DOS CARDS (EXPANDIR E ALINHAR) */
+.pagina-inicial .cards-conteudo {
+  width: 100%;
+  margin-top: 10px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.pagina-inicial .card-link {
+  height: 100%;
+  text-decoration: none;
+}
+
+/* ===== Ajuste final: três cards da página inicial ===== */
+.pagina-inicial .cards-conteudo {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  align-items: stretch;
+}
+
+.pagina-inicial .card-link {
+  width: 100%;
+  min-height: 300px;
+}
+
+@media (max-width: 1100px) {
+  .pagina-inicial .cards-conteudo {
+    grid-template-columns: 1fr;
   }
 }
