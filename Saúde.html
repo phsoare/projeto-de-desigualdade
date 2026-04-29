@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Saúde | Desigualdade Social</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <style>
+    .conteudo-topico h3 {
+      color: var(--verde-escuro);
+      margin: 26px 0 10px;
+      font-size: 1.35rem;
+    }
+
+    .intro-saude {
+      font-size: 1.08rem;
+      margin-bottom: 24px;
+    }
+
+    .contraste-saude {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      margin: 26px 0 30px;
+    }
+
+    .foto-contraste {
+      background: #f7faf8;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 8px 18px rgba(0, 0, 0, 0.10);
+      border-top: 6px solid var(--verde-principal);
+    }
+
+    .foto-contraste img {
+      width: 100%;
+      height: 240px;
+      object-fit: cover;
+    }
+
+    .foto-contraste div {
+      padding: 16px;
+    }
+
+    .foto-contraste h3 {
+      margin: 0 0 8px;
+      font-size: 1.18rem;
+    }
+
+    .blocos-saude {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+      margin-top: 18px;
+    }
+
+    .bloco-info {
+      background: #f7faf8;
+      border-left: 6px solid var(--verde-principal);
+      border-radius: 14px;
+      padding: 18px;
+    }
+
+    .bloco-info h3 {
+      margin-top: 0;
+      font-size: 1.15rem;
+    }
+
+    .bloco-info ul {
+      padding-left: 20px;
+    }
+
+    .bloco-info li {
+      margin-bottom: 6px;
+    }
+
+    .comparativo-saude {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+      margin-top: 16px;
+    }
+
+    .card-comparativo {
+      background: #f7faf8;
+      border-radius: 14px;
+      padding: 20px;
+      box-shadow: 0 6px 14px rgba(0, 0, 0, 0.06);
+    }
+
+    .card-comparativo h3 {
+      margin-top: 0;
+    }
+
+    .destaque-final {
+      margin-top: 28px;
+      background: #e8f4ed;
+      border-radius: 14px;
+      padding: 20px;
+      font-weight: bold;
+      color: var(--verde-escuro);
+    }
+
+    @media (max-width: 900px) {
+      .contraste-saude,
+      .blocos-saude,
+      .comparativo-saude {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content container">
+      <h1>Desigualdade Social</h1>
+      <p>Senador Canedo | Conhecimento e Sustentabilidade</p>
+    </div>
+  </header>
+
+  <section class="layout-principal container">
+    <nav class="menu-principal menu-lateral-estilo">
+      <div class="menu-links">
+        <a href="index.html">Página Inicial</a>
+        <a href="Saúde.html">Saúde</a>
+        <a href="Moradia.html">Moradia</a>
+        <a href="Acesso ao primeiro emprego.html">Acesso ao primeiro emprego</a>
+        <a href="economia.html">Economia</a>
+        <a href="infraestrutura.html">Infraestrutura</a>
+      </div>
+    </nav>
+
+    <main class="pagina-topico">
+      <section class="conteudo-topico">
+        <h2>Desigualdade na Saúde</h2>
+
+        <p class="intro-saude">
+          A desigualdade na saúde não acontece por acaso. Ela é causada por fatores sociais,
+          econômicos e estruturais. Enquanto algumas pessoas conseguem atendimento rápido,
+          exames modernos e acompanhamento constante, outras enfrentam filas, demora e falta
+          de estrutura.
+        </p>
+
+        <section class="contraste-saude">
+          <article class="foto-contraste">
+            <img src="ressonancia.jpg" alt="Pessoa realizando exame em equipamento moderno de saúde privada" />
+            <div>
+              <h3>Saúde privada</h3>
+              <p>Mais rapidez, conforto, exames modernos e maior facilidade para consultar especialistas.</p>
+            </div>
+          </article>
+
+          <article class="foto-contraste">
+            <img src="saudepublica.jpeg" alt="Unidade pública de saúde com muitas pessoas aguardando atendimento" />
+            <div>
+              <h3>Saúde pública sobrecarregada</h3>
+              <p>Atendimento gratuito e universal, mas muitas vezes com filas, espera e falta de recursos.</p>
+            </div>
+          </article>
+        </section>
+
+        <div class="blocos-saude">
+          <article class="bloco-info">
+            <h3>1. Diferença de renda</h3>
+            <ul>
+              <li>Pessoas ricas podem pagar consultas, exames e planos de saúde.</li>
+              <li>Pessoas pobres dependem principalmente do sistema público.</li>
+              <li>Isso gera diferença na rapidez e na qualidade do atendimento.</li>
+            </ul>
+          </article>
+
+          <article class="bloco-info">
+            <h3>2. Falta de investimento no sistema público</h3>
+            <ul>
+              <li>Falta de recursos.</li>
+              <li>Poucos profissionais.</li>
+              <li>Falta de equipamentos.</li>
+              <li>Atendimento mais lento.</li>
+            </ul>
+          </article>
+
+          <article class="bloco-info">
+            <h3>3. Desigualdade entre regiões</h3>
+            <ul>
+              <li>Em Senador Canedo, faltam especialistas.</li>
+              <li>Muitos atendimentos dependem de Goiânia.</li>
+              <li>O deslocamento dificulta o acesso de parte da população.</li>
+            </ul>
+          </article>
+
+          <article class="bloco-info">
+            <h3>4. Falta de informação</h3>
+            <ul>
+              <li>Pessoas com mais educação tendem a prevenir doenças e buscar ajuda mais cedo.</li>
+              <li>Pessoas com menos acesso à informação podem demorar para procurar atendimento.</li>
+              <li>A falta de conhecimento dificulta o reconhecimento de sintomas.</li>
+            </ul>
+          </article>
+
+          <article class="bloco-info">
+            <h3>5. Condições de vida</h3>
+            <ul>
+              <li>Falta de saneamento básico.</li>
+              <li>Alimentação de baixa qualidade.</li>
+              <li>Moradias precárias.</li>
+              <li>Maior exposição a doenças.</li>
+            </ul>
+          </article>
+
+          <article class="bloco-info">
+            <h3>6. Dificuldade de acesso</h3>
+            <ul>
+              <li>Falta de transporte.</li>
+              <li>Longas distâncias.</li>
+              <li>Horários limitados.</li>
+              <li>Demora entre exame e retorno.</li>
+              <li>Crescimento populacional rápido e dependência de outras cidades.</li>
+            </ul>
+          </article>
+        </div>
+
+        <h3>Soluções possíveis</h3>
+        <div class="blocos-saude">
+          <article class="bloco-info">
+            <ul>
+              <li>Diagnóstico mais rápido.</li>
+              <li>Uso da telemedicina.</li>
+              <li>Fortalecimento das UBS.</li>
+            </ul>
+          </article>
+
+          <article class="bloco-info">
+            <ul>
+              <li>Organização das filas.</li>
+              <li>Manutenção de profissionais.</li>
+              <li>Mais estrutura para atendimento local.</li>
+            </ul>
+          </article>
+        </div>
+
+        <h3>Alimentação: rico x pobre</h3>
+        <div class="comparativo-saude">
+          <article class="card-comparativo">
+            <h3>Alto orçamento</h3>
+            <ul>
+              <li>Salmão e filé mignon.</li>
+              <li>Quinoa e arroz negro.</li>
+              <li>Whey protein e suplementos.</li>
+            </ul>
+          </article>
+
+          <article class="card-comparativo">
+            <h3>Baixo orçamento</h3>
+            <ul>
+              <li>Ovos, sardinha e frango.</li>
+              <li>Arroz e feijão.</li>
+              <li>Frutas da estação.</li>
+            </ul>
+          </article>
+        </div>
+
+        <p class="destaque-final">
+          Conclusão: comer bem não depende apenas de dinheiro, mas a renda influencia muito o acesso
+          a alimentos variados, acompanhamento médico e melhores condições de vida.
+        </p>
+
+        <h3>SUS x Saúde privada</h3>
+        <div class="comparativo-saude">
+          <article class="card-comparativo">
+            <h3>SUS</h3>
+            <ul>
+              <li>Gratuito.</li>
+              <li>Acesso universal.</li>
+              <li>Maior tempo de espera.</li>
+            </ul>
+          </article>
+
+          <article class="card-comparativo">
+            <h3>Saúde privada</h3>
+            <ul>
+              <li>Pago.</li>
+              <li>Mais rápido.</li>
+              <li>Mais confortável.</li>
+            </ul>
+          </article>
+        </div>
+
+        <p class="destaque-final">
+          Resumo: o SUS garante acesso à saúde para todos; a saúde privada geralmente oferece mais rapidez
+          e conforto para quem pode pagar.
+        </p>
+      </section>
+    </main>
+  </section>
+
+  <footer class="rodape">
+    <div class="container">
+      <p>Projeto escolar sobre desigualdade social • Senador Canedo</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
